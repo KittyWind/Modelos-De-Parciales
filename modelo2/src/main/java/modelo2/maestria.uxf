@@ -1,0 +1,17 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>370</x><y>60</y><w>150</w><h>130</h></coordinates><panel_attributes>Carrera
+--
+-nombre: String
+--
++gananciasPorMaterias(): ArrayList&lt;MontoMateria&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>270</y><w>150</w><h>120</h></coordinates><panel_attributes>Materia
+--
+-codigo: int
+-nombre: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>440</y><w>150</w><h>40</h></coordinates><panel_attributes>Estudiante</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>110</x><y>550</y><w>140</w><h>30</h></coordinates><panel_attributes>EstudianteBeca</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>650</x><y>550</y><w>160</w><h>30</h></coordinates><panel_attributes>EstudianteMayor</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>180</y><w>80</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+-materias</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>140</y><w>130</w><h>150</h></coordinates><panel_attributes>MontoMateria
+--
+-montoTotal: double
+-nombre: String
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>160</y><w>170</w><h>90</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>150;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>380</y><w>100</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n
+-estudiantes</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element></diagram>
