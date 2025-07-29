@@ -10,5 +10,13 @@ package modelo3;
  * @author kitty
  */
 public class Infraccion {
+    private Fecha fecha;
 
+    public Infraccion(Fecha fecha) {
+        this.fecha = fecha;
+    }
+
+    public boolean estaVigente() {
+        return this.fecha.estaVigente();
+    }
 }
