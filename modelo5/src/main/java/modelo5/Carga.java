@@ -10,5 +10,22 @@ package modelo5;
  * @author kitty
  */
 public class Carga {
+    private static final double PESO_MAXIMO = 100.0; // Peso máximo permitido
+    
+    
+    private String descripcion;
+    private double peso;
 
+    public Carga(String descripcion, double peso) {
+        this.descripcion = descripcion;
+        this.peso = peso;
+    }
+
+    public boolean tienePesoAdecuado() {
+        return peso <= PESO_MAXIMO; // Verifica si el peso de la carga es adecuado
+    }
+
+    public String devolverDetalles() {
+        return "Descripcion: " + descripcion + ", Peso: " + peso + " kg";
+    }
 }

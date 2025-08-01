@@ -9,6 +9,26 @@ package modelo5;
  *
  * @author kitty
  */
-public class Nave {
+public abstract class Nave {
+    private String planetaOrigen;
+    private int tripulacion;
+
+    public Nave(String planetaOrigen, int tripulacion) {
+        this.planetaOrigen = planetaOrigen;
+        this.tripulacion = tripulacion;
+    }
+
+    public abstract boolean esApta();
+
+    public abstract String devolverManifiesto();
+
+    public String getPlanetaOrigen() {
+        return planetaOrigen;
+    }
+
+    public int getTripulacion() {
+        return tripulacion;
+    }
+
 
 }
