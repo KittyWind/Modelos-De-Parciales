@@ -72,5 +72,15 @@ public class Carrera {
         return estudianteEncontrado;
     }
 
+    public ArrayList<MontoMateria> gananciasPorMaterias(){
+        ArrayList<MontoMateria> montoMaterias = new ArrayList<>();
+        for (Materia m : materias){
+            if(m != null){
+                montoMaterias.add(new MontoMateria(m.ganancias(),m.getNombre()));
+            }
+        }
+        return montoMaterias;
+    }
+
 
 }

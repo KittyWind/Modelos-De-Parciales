@@ -45,6 +45,18 @@ public class Materia {
         return estudianteEncontrado;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public double ganancias(){
+        double gananciatotal = 0.0;
+        for (Estudiante estudiante: estudiantes){
+            gananciatotal += estudiante.devolverCuota();
+        }
+        return gananciatotal;
+    }
+
     public int getCodigo() {
         return codigo;
     }

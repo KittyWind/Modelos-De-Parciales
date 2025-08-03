@@ -43,6 +43,7 @@ public class Modelo2 {
         m2.mostrarEstudiantes(); // Mostrar estudiantes de Física
         m3.mostrarEstudiantes(); // Mostrar estudiantes de Química
         m4.mostrarEstudiantes(); // Mostrar estudiantes de Biología
+        System.out.println(carrera.gananciasPorMaterias());
         
     }
 }

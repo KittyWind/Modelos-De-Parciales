@@ -10,12 +10,21 @@ package modelo2;
  * @author kitty
  */
 public class Estudiante {
+    private static final int CUOTA = 25000;
     private String dni;
     private String nombre;
 
     public Estudiante(String dni, String nombre) {
         this.dni = dni;
         this.nombre = nombre;
+    }
+
+    public double devolverCuota(){
+        return CUOTA;
+    }
+
+    public double calcularDescuento(double porcentaje){
+        return CUOTA * porcentaje;
     }
 
     public boolean verificarDni(String dni){
