@@ -18,4 +18,9 @@ public class OrdenPuerta extends Orden{
     public boolean isEnvioGratis() {
         return envioGratis;
     }
+
+    @Override
+    public boolean verificarComuna(){
+        return this.verificarComuna(this.getComprador().getDomicilio());
+    }
 }

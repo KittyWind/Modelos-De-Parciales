@@ -22,4 +22,17 @@ public abstract class Orden {
                 ", monto=" + monto +
                 '}';
     }
+
+
+
+    public Usuario getComprador() {
+        return comprador;
+    }
+
+    public boolean verificarComuna(Domicilio domicilio){
+        Domicilio domicilio1 = vendedor.getDomicilio();
+        return domicilio1.verificarComuna(domicilio);
+    }
+
+    public abstract boolean verificarComuna();
 }

@@ -19,4 +19,8 @@ public class Domicilio {
                 ", comuna=" + comuna +
                 '}';
     }
+
+    public boolean verificarComuna(Domicilio domicilio){
+        return this.comuna == domicilio.comuna;
+    }
 }

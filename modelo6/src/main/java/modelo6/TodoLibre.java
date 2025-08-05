@@ -23,6 +23,19 @@ public class TodoLibre {
         }
     }
 
+    public void ordenConMismaColumna(){
+        int total = this.ordenes.size();
+        int cont = 0;
+        for(Orden orden: ordenes){
+            if(orden.verificarComuna()){
+                cont++;
+            }
+        }
+
+        double porcentaje = ((double) cont / total) * 100;
+        System.out.println("de un total de " + total + " ordenes, un " + porcentaje + "% de ordenes cuyo origen y destino es en la misma columna");
+    }
+
     public void mostrarCantidadDeOrdenesConEnvioGratis(){
         int cont = 0;
         for(Orden orden: ordenes){

@@ -14,4 +14,9 @@ public class OrdenRetiro extends Orden {
                 "sucursal=" + sucursal +
                 '}';
     }
+
+    @Override
+    public boolean verificarComuna(){
+        return this.verificarComuna(this.sucursal.getDomicilio());
+    }
 }
