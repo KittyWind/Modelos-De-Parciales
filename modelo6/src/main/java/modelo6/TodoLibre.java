@@ -23,6 +23,18 @@ public class TodoLibre {
         }
     }
 
+    public void mostrarCantidadDeOrdenesConEnvioGratis(){
+        int cont = 0;
+        for(Orden orden: ordenes){
+            if(orden instanceof OrdenPuerta){
+                if (((OrdenPuerta) orden).isEnvioGratis()){
+                    cont++;
+                }
+            }
+        }
+        System.out.println("hay actualmente: " + cont + " ordenes con envios gratis");
+    }
+
     @Override
     public String toString() {
         return "TodoLibre{" +
